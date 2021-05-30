@@ -1,0 +1,44 @@
+package ru.vsu.cs.kalashyan;
+
+public class MyNode<T> {
+
+    private T value;
+    private MyNode<T> next;
+    private MyNode<T> prev;
+
+    public MyNode(T value) {
+        this.value = value;
+    }
+
+    public MyNode() {
+    }
+
+    public T getValue() {
+        return value;
+    }
+
+    public void setValue(T value) {
+        this.value = value;
+    }
+
+    public MyNode<T> getNext() {
+        return next;
+    }
+
+    public void setNext(MyNode<T> next) {
+        this.next = next;
+    }
+
+    public MyNode<T> getPrev() {
+        return prev;
+    }
+
+    public void setPrev(MyNode<T> prev) {
+        this.prev = prev;
+    }
+
+    @Override
+    public String toString() {
+        return String.valueOf(value);
+    }
+}
